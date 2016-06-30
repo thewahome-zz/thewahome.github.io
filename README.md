@@ -1,2 +1,0 @@
-# thewahome.github.io
-Personal
