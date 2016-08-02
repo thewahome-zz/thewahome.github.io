@@ -1,1 +1,73 @@
-var lastId,topMenu=$("#top-menu"),topMenuHeight=topMenu.outerHeight()+15,menuItems=topMenu.find("a"),scrollItems=menuItems.map(function(){var t=$($(this).attr("href"));return t.length?t:void 0});menuItems.click(function(t){var e=$(this).attr("href"),n="#"===e?0:$(e).offset().top-topMenuHeight+1;$("html, body").stop().animate({scrollTop:n},300),t.preventDefault()}),$(window).scroll(function(){var t=$(this).scrollTop()+topMenuHeight,e=scrollItems.map(function(){return $(this).offset().top<t?this:void 0});e=e[e.length-1];var n=e&&e.length?e[0].id:"";lastId!==n&&(lastId=n,menuItems.parent().removeClass("active").end().filter("[href=#"+n+"]").parent().addClass("active"))});
+  
+//------- SITE LOADER ---//
+
+jQuery(window).load(function() { 
+    jQuery(".spinner").delay(400).fadeOut("slow");
+    jQuery(".title-load").delay(400).fadeOut("slow");
+    jQuery("#loader").delay(800).fadeOut("slow"); 
+
+
+});
+
+
+
+ //------- MAGNIFICENT POPUP ---//
+
+      $(document).ready(function() {
+
+        "use strict";
+
+          $('.image-modal').magnificPopup({
+
+          type:'inline',
+          fixedContentPos: false,
+          removalDelay: 100,
+          closeBtnInside: true,
+          preloader: false,
+          mainClass: 'mfp-fade'
+
+          });
+
+          $(document).on('click', '.popup-modal-dismiss', function (e) {
+          e.preventDefaut();
+          $.magnificPopup.close();
+          });
+
+
+        $('.image-popup-no-margins').magnificPopup({
+          type: 'image',
+          closeOnContentClick: true,
+          closeBtnInside: false,
+          fixedContentPos: true,
+          mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+          image: {
+            verticalFit: true
+          },
+          zoom: {
+            enabled: true,
+            duration: 300 // don't foget to change the duration also in CSS
+          }
+        });
+
+        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+          disableOn: 700,
+          type: 'iframe',
+          mainClass: 'mfp-fade',
+          removalDelay: 160,
+          preloader: false,
+          fixedContentPos: false
+        });
+
+  // ACTIVE LINKS
+
+          $('body').scrollspy({ offset: 200, target: '.navigation' });
+
+
+
+        });
+
+
+
+
+
+
