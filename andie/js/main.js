@@ -243,7 +243,7 @@
     function initialize() {
         var mapProp = {
             center: myCenter,
-            zoom: 15,
+            zoom: 17,
             scrollwheel: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
