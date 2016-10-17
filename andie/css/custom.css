@@ -1,0 +1,92 @@
+.logo_area .main_logo {
+   /* width: 284px;
+    height: 68px;
+    #f15a2c
+    #784398;
+    11c3f1
+    margin: 13px 0;*/
+    margin-left: 99%;
+}
+
+img.main_logo {
+	width: auto;
+	height: 85px;
+	margin-left: 69%;
+}
+.logo_img{display: none;}
+.white{color: #ffffff;}
+
+/* SCHEDULE */
+
+.event {
+	display:table;
+	width:100%;
+	border-spacing: 10px 5px;
+	height: 110px; 
+}
+
+.event-inner {
+	display: table-row;
+}
+
+.event h3 {
+	margin-top:0;
+	font-size:17px;
+}
+
+.event .icon {
+	width:16%;
+	padding:5px;
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.event .icon i {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.event .icon .time {
+	font-family:'Economica';
+	font-size:22px;
+	font-weight:700;
+}
+
+.event .description {
+	padding:15px;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.event .description p {
+	font-size:14px;
+}
+
+.event .name {
+	font-family:'sinkin_sans600_semibold';
+	font-size:14px;
+}
+
+
+/* Schedule Pagination */
+
+#days .item {
+	margin:10px;
+	padding:10px;
+}
+
+#days .item:hover,
+#days .item:active {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#days .item h4,
+#days .item h5 {
+	font-family:'sinkin_sans600_semibold';
+	margin-bottom:10px;
+	text-align:center;
+	cursor:pointer;
+}
