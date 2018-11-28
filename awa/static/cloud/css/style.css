@@ -28494,3 +28494,101 @@ div.tagsinput span.tag a {
 /*-------------------------------------------------------------------*/
 
 /*# sourceMappingURL=maps/style.css.map */
+
+.main-container {
+  padding: 50px 90px;
+}
+
+.creditcard-wrap {
+  background: url('world.png') no-repeat;
+  background-color: #ae5533;
+  background-size: contain;
+    height: 250px;
+    border-radius: 5px;
+    width: 450px;
+  z-index: 2;
+  margin: 0 auto;
+  box-shadow: 0px 5px 25px 0px #000;
+  position: relative;
+}
+
+.creditcard-front {
+  position: relative;
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.creditDeatils-holder {
+  position: absolute;
+  bottom: 65px;
+  font-size: 24px;
+}
+
+.creditcard-number {
+  font-family: 'Inconsolata', monospace;
+  font-size: 25px;
+  color: #fff;
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.creditNumber {
+  text-align: center;
+  width: 100%;
+}
+
+.creditcard-name {
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  color: #fff;
+  display: inline-block;
+}
+
+.creditcard-expiry {
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 50px;
+  display: inline-block;
+}
+.creditcard-expiry:after {
+  content: "Joined";
+  font-size: 14px;
+  display: block;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.creditcard-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-align: right;
+  padding-left: 15px;
+}
+
+.card-icon {
+  width: 75px;
+}
+
+.creditcard-back {
+  display: none;
+}
+
+.creditcard-rfid {
+  background: #000;
+  height: 45px;
+  margin-top: 25px;
+}
+
+.creditcard-ccv {
+  margin-top: 15px;
+  background: #fff;
+}
+
+.ccv-number {
+  text-align: right;
+  padding: 0 25px;
+  border-left: 1px solid #222;
+}
