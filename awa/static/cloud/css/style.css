@@ -27790,7 +27790,7 @@ div.tagsinput span.tag a {
   background: #f0f2f7;
   display: block;
   margin: 0.5em;
-  min-height: 40em;
+  min-height: 41em;
   overflow: hidden;
   position: relative;
   width: auto;
@@ -28122,6 +28122,9 @@ div.tagsinput span.tag a {
   .auth.theme-one .auth-footer {
     -webkit-justify-content: center;
     justify-content: center;
+  }
+  .wizard > .content {
+    min-height: 72em;
   }
 }
 
